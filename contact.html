@@ -1,0 +1,61 @@
+<!--Author: Michael Bean
+    Date:6/6/2024
+    Class: D277
+    Project: Task 2
+    Contact Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and linking stylesheet and script -->
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <img src="images/siteLogo.png" alt="Site Logo" class="logo">
+        <div class="header-text">
+            <h1>Welcome to Washington State</h1>
+            <h2>Contact Us</h2>
+        </div>
+    </header>
+    
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="olympia.html">Olympia</a></li>
+            <li><a href="seattle.html">Seattle</a></li>
+            <li><a href="spokane.html">Spokane</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main content section -->
+    <section>
+        <h2>Get in Touch</h2>
+        <form onsubmit="return validateEmail()">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <label for="confirm-email">Confirm Email:</label>
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm Email" required><br>
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" placeholder="Your question..." required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <!-- Aside for contact information -->
+    <aside>
+        <h3>Contact Information</h3>
+        <p>For more information, please visit our <a href="https://wa.gov/" target="_blank" style="color: white;">official website</a>.</p>
+    </aside>
+</body>
+</html>

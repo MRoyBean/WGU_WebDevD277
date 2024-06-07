@@ -1,0 +1,160 @@
+/* Author: Michael Bean
+    Date:6/6/2024
+    Class: D277
+    Project: Task 2
+    Styles CSS Page */
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0E4CC;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Allows vertical scrolling */
+}
+
+/* Placement for header, nav, section, and aside elements */
+header, nav, section, aside {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Header styles */
+header {
+    background-color: #1B4D3E;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header .header-text {
+    flex-grow: 1;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    margin: 0;
+    border-radius: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #3A8FB7;
+    background-color: #111;
+}
+
+/* Container styles for layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.container > section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.container > aside {
+    width: 300px;
+}
+
+/* Section styles */
+section {
+    flex: 1;
+    background-color: #A4B494;
+    color: #333;
+}
+
+/* Aside styles */
+aside {
+    width: 300px;
+    background-color: #1B4D3E;
+    color: white;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Clearfix styles */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Styles for the rain effect container */
+#rain-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Styles for raindrops */
+.raindrop {
+    position: absolute;
+    bottom: 100%;
+    width: 2px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    animation: fall linear infinite;
+}
+
+/* Animation for raindrops */
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Table styles with grid lines */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
